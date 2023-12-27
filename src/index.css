@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --primary-100:#007FFF;
+--primary-200:#69aeff;
+--primary-300:#e0ffff;
+--accent-100:#00BFFF;
+--accent-200:#00619a;
+--text-100:#000000;
+--text-200:#2c2c2c;
+--bg-100:#F0F8FF;
+--bg-200:#e6eef5;
+--bg-300:#bdc5cc; */
+
+@layer base {
+  html {
+    @apply bg-[#F0F8FF];
+  }
+}
+
+@layer components {
+  .card-list {
+    @apply grid grid-cols-[repeat(1,minmax(15rem,20rem))] justify-center gap-4 p-4 sm:grid-cols-[repeat(2,minmax(15rem,20rem))] md:grid-cols-[repeat(3,minmax(15rem,20rem))];
+  }
+
+  .card {
+    @apply min-h-[20rem] rounded-3xl bg-[#ffffff33] p-4 text-white backdrop-blur-sm transition-all delay-300 duration-300 ease-in-out hover:scale-105;
+  }
+
+  .slide {
+    @apply absolute h-[30rem] w-full border-2 border-black rounded-2xl transition-all delay-300 duration-300 ease-in-out;
+  }
+  .slider-btn {
+    @apply absolute top-[50%] z-10 h-[3rem] w-[3rem] cursor-pointer rounded-full border-none bg-[#ffffffb3] text-[2rem] text-[#333] sm:h-[4.5rem] sm:w-[4.5rem] sm:text-[2.5rem];
+  }
+}
+
+.bg-primary {
+  background: linear-gradient(
+    130deg,
+    rgba(0, 122, 244, 1) 0%,
+    rgb(77, 175, 255) 100%
+  );
+}
+
+
+
+/* .card {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: #fff;
+} */
+
+/* .circle-btn-1 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  transform: translateX(0rem);
+}
+
+.circle-btn-2 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.circle-btn-3 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.circle-btn-4 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.circle-btn-5 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.circle-btn-6 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+} */
+
