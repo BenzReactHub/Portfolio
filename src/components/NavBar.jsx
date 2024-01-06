@@ -41,9 +41,9 @@ function Nav({ children }) {
     }
 
     const btn = e.target.parentNode;
-    btn.classList.add('sm:text-[#00619A]');
-    btn.classList.add('sm:bg-[#E6EEF5]');
     activeLinkRef.current = btn;
+    activeLinkRef.current.classList.add('sm:text-[#00619A]');
+    activeLinkRef.current.classList.add('sm:bg-[#E6EEF5]');
     const id = e.target.getAttribute('href');
     const target = document.querySelector(id);
     if (!target) return;
