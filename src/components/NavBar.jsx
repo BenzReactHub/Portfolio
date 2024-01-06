@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useRef, useState } from 'react';
 import LogoSvg from '../assets/logo.svg';
 import MenuSvg from '../assets/nav-menu.svg';
 import CancelSvg from '../assets/cancel.svg';
@@ -21,6 +21,7 @@ const NavContext = createContext();
 
 function Nav({ children }) {
   const [isToggle, setIsToggle] = useState(false);
+  const activeLinkRef = useRef(null);  
 
   const close = () => setIsToggle(false);
   function handleToggle() {
@@ -30,15 +31,20 @@ function Nav({ children }) {
   function handleClick(e) {
     e.preventDefault();
     // console.log(e.currentTarget)
+    // console.log(e.target)
+    console.log(activeLinkRef.current)
     if (e.target.tagName.toLowerCase() !== 'a') return;
-    e.currentTarget.querySelectorAll('li').forEach((el) => {
-      el.classList.remove('sm:text-[#00619A]');
-      el.classList.remove('sm:bg-[#E6EEF5]');
-    });
+    // 移除之前的活動狀態
+    if (activeLinkRef.current) {
+      activeLinkRef.current.classList.remove('sm:text-[#00619A]');
+      activeLinkRef.current.classList.remove('sm:bg-[#E6EEF5]');
+    }
+
     const btn = e.target.parentNode;
-    const id = e.target.getAttribute('href');
     btn.classList.add('sm:text-[#00619A]');
     btn.classList.add('sm:bg-[#E6EEF5]');
+    activeLinkRef.current = btn;
+    const id = e.target.getAttribute('href');
     const target = document.querySelector(id);
     if (!target) return;
     target.scrollIntoView({ behavior: 'smooth' });
