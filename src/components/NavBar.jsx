@@ -32,7 +32,7 @@ function Nav({ children }) {
     e.preventDefault();
     // console.log(e.currentTarget)
     // console.log(e.target)
-    console.log(activeLinkRef.current)
+    // console.log(activeLinkRef.current)
     if (e.target.tagName.toLowerCase() !== 'a') return;
     // 移除之前的活動狀態
     if (activeLinkRef.current) {
