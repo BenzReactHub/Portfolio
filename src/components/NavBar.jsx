@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { createContext, useContext, useRef, useState } from 'react';
 import LogoSvg from '../assets/logo.svg';
 import MenuSvg from '../assets/nav-menu.svg';
@@ -19,7 +21,7 @@ function NavBar() {
 
 const NavContext = createContext();
 
-function Nav({ children }) {
+export function Nav({ children }) {
   const [isToggle, setIsToggle] = useState(false);
   const activeLinkRef = useRef(null);  
 
@@ -83,7 +85,7 @@ function Nav({ children }) {
   );
 }
 
-function Logo({ styles }) {
+export function Logo({ styles }) {
   return (
     <img
       className={`animate-spin-slow ${styles} sm:h-[3.5rem] md:h-[4rem]`}
