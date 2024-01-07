@@ -2,7 +2,7 @@ import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Circular, { Item } from './Circular';
+import Circular, { Item } from '../components/Circular';
 
 describe('Item', () => {
   it('renders the Item component with the correct content and styles', () => {

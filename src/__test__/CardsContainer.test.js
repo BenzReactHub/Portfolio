@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import CardsContainer from './CardsContainer';
+import CardsContainer from '../components/CardsContainer';
 
 describe('CardsContainer', () => {
   it('renders the CardsContainer component with the correct title and children', () => {

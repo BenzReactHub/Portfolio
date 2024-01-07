@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Nav } from './NavBar';
+import { Nav } from '../components/NavBar';
 
 describe('Nav component', () => {
   it('renders Nav component with Logo, Menu, Item, and Cancel', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Introduction from './Introduction';
+import Introduction from '../components/Introduction';
 
 describe('Introduction', () => {
   it('renders the Introduction component with the correct content', () => {

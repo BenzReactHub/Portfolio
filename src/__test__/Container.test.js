@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Container from './Container';
+import Container from '../components/Container';
 
 describe('Container', () => {
   it('renders the Container component and gets an element by ID', () => {

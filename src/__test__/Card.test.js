@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Card from './Card';
+import Card from '../components/Card';
 
 describe('Card', () => {
   it('renders the Card component with the correct name and content', () => {
