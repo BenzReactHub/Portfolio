@@ -7,6 +7,7 @@ import TimeLine from '../components/TimeLine';
 import Circular from '../components/Circular';
 import Introduction from '../components/Introduction';
 import CardsContainer from '../components/CardsContainer';
+import Card from '../components/Card';
 
 function Container({ children, styles, id }) {
   const defaultStyle =
@@ -29,7 +30,17 @@ function Home() {
       </Container>
       <main>
         <Container id="projects">
-          <CardsContainer title="Projects" />
+          <CardsContainer title="Projects">
+            <Card name="Project A001" />
+            <Card name="Project A002" />
+            <Card name="Project A003" />
+            <Card name="Project A004" />
+            <Card name="Project A005" />
+            <Card name="Project A006" />
+            <Card name="Project A007" />
+            <Card name="Project A008" />
+            <Card name="Project A009" />
+          </CardsContainer>
         </Container>
         <Container id="about">
           <TimeLine title="About Me" />

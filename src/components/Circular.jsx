@@ -1,17 +1,22 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-function Item({ positionX, positionY, radius, isToggle, children }) {
+export function Item({ positionX, positionY, radius, isToggle, children }) {
   const defaultStyle = `absolute flex items-center justify-center h-[${radius}rem] w-[${radius}rem] bg-primary rounded-full shadow-xl transition-all duration-700 ease-in-out`;
   if (isToggle)
     return (
       <li
+        aria-label="circular-menu"
         className={`${defaultStyle} translate-x-[${positionX}rem] translate-y-[${positionY}rem] opacity-100`}
       >
         {children}
       </li>
     );
-  return <li className={`${defaultStyle} opacity-0`}>{children}</li>;
+  return (
+    <li aria-label="circular-menu" className={`${defaultStyle} opacity-0`}>
+      {children}
+    </li>
+  );
 }
 
 function Circular({ title }) {

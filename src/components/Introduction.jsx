@@ -11,7 +11,7 @@ function Introduction() {
           <br /> Front-End Developer.
         </h1>
       </div>
-      <div className="bg-primary m-auto flex h-[15rem] w-[15rem] translate-y-16 rounded-full sm:h-[20rem] sm:w-[20rem] md:h-[22rem] md:w-[22rem] lg:h-[25rem] lg:w-[25rem]">
+      <div data-testid="background-circle" className="bg-primary m-auto flex h-[15rem] w-[15rem] translate-y-16 rounded-full sm:h-[20rem] sm:w-[20rem] md:h-[22rem] md:w-[22rem] lg:h-[25rem] lg:w-[25rem]">
         <img
           className="translate-y-8 lg:translate-y-20"
           src={UserSvg}
