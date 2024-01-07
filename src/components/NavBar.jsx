@@ -63,11 +63,13 @@ export function Nav({ children }) {
           </ul>
           <ul
             onClick={(e) => handleClick(e)}
+            aria-label='desktop'
             className="hidden sm:flex sm:items-center sm:justify-around"
           >
             {children}
           </ul>
           <ul
+            aria-label='mobile'
             className={`duration-350 transition-all delay-500 sm:hidden ${
               isToggle
                 ? 'duration-800 max-h-[20rem] opacity-100 ease-in'
@@ -82,7 +84,7 @@ export function Nav({ children }) {
   );
 }
 
-export function Logo({ styles }) {
+function Logo({ styles }) {
   return (
     <img
       className={`animate-spin-slow ${styles} sm:h-[3.5rem] md:h-[4rem]`}
