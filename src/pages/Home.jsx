@@ -8,16 +8,7 @@ import Circular from '../components/Circular';
 import Introduction from '../components/Introduction';
 import CardsContainer from '../components/CardsContainer';
 import Card from '../components/Card';
-
-function Container({ children, styles, id }) {
-  const defaultStyle =
-    'w-full m-auto sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[65%] 2xl:w-[50%]';
-  return (
-    <div id={id} className={`${defaultStyle} ${styles}`}>
-      {children}
-    </div>
-  );
-}
+import Container from '../components/Container';
 
 function Home() {
   return (
