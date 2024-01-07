@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import Arrow from '../assets/timeline-arrow.svg';
 
 function TimeLine({title}) {

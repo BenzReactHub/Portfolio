@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 const slides = [1, 2, 3, 4, 5, 6];

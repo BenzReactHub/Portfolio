@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import Card from './Card';
 
 function CardsContainer({title}) {

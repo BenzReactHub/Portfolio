@@ -1,3 +1,4 @@
+import React from 'react';
 import UserSvg from '../assets/user.svg';
 
 function Introduction() {

@@ -1,5 +1,4 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable react/prop-types */
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 function Item({ positionX, positionY, radius, isToggle, children }) {
