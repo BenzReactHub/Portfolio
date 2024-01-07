@@ -1,5 +1,4 @@
-import React from 'react';
-import { createContext, useContext, useRef, useState } from 'react';
+import React, { createContext, useContext, useRef, useState } from 'react';
 import LogoSvg from '../assets/logo.svg';
 import MenuSvg from '../assets/nav-menu.svg';
 import CancelSvg from '../assets/cancel.svg';

@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import NavBar from '../components/NavBar';
-import Introduction from '../components/Introduction';
+import Slider from '../components/Slider';
 import Footer from '../components/Footer';
-import CardsContainer from '../components/CardsContainer';
 import TimeLine from '../components/TimeLine';
 import Circular from '../components/Circular';
-import Slider from '../components/Slider';
+import Introduction from '../components/Introduction';
+import CardsContainer from '../components/CardsContainer';
 
 function Container({ children, styles, id }) {
   const defaultStyle =
